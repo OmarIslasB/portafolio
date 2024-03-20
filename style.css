@@ -1,0 +1,161 @@
+/* este archivo es para el estilo del encriptador de texto para el
+challenge encriptador de ALURA
+*/
+
+/*el logo de ALURA*/
+
+body{
+    background: #F3F5FC;
+}
+.cabecera{
+    display: block;
+    background: black;
+}
+
+.logo{
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 30px;
+    top: 30px; 
+}
+
+/*Cuadro de texto donde escribir lo que se encriptará.
+No debe moverse el tamaño, y el texto placeholder tiene
+ciertas caracteristicas que estan el FIGMA*/
+
+.textarea{
+    padding: 10px;
+    resize: none;
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    font: Inter;
+    font-size: 16px;
+    font-weight: 250;
+    color: #0A3871;
+    text-transform: lowercase;
+}
+
+textarea::placeholder {
+    font: Inter;
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 400;
+    color: #0A3871;
+
+}
+
+/* Area de texto con limitaciones del encriptador y la imagen*/
+
+.limitaciones{
+    position: absolute;
+    top: 380px;
+    left: 150px;
+    height: 25px;
+    width: 400px;
+    padding: 5px;
+}
+
+.limit-text{
+    display: inline-block;
+    padding: 0px 5px 3px 5px;
+    vertical-align: top;
+    color: #45565F;
+}
+
+/* Area donte estan los botones*/
+
+.botones{
+    display: inline-block;
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}
+
+.cript-btn{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    background: #0A3871;
+    color: white;
+    font: Inter;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    border: 1px;
+    cursor: pointer;
+}
+
+.uncript-btn{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    background: #D8DFE8;
+    color: #0A3871;
+    font: Inter;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    border: 1px;
+    cursor: pointer;
+}
+
+/*Rectangulo izquierdo donde colocar lo demas*/
+
+.rectangulo{
+    position: relative;
+    background:#FFFFFF;
+    width: 400px;
+    height: 500px;
+    top: 40px;
+    left: 750px;
+    border-radius: 32px;
+    background-size: 42%;
+    background-image: url(/imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+    
+}
+
+.mensajeencriptado{
+    position: absolute;
+    top: 40%;
+    left: 17%;
+    resize: none;
+}
+
+#output{
+    font: Inter;
+    font-family: Inter;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    color: #343A40;
+
+
+}
+
+.btn-copia{
+    position: relative;
+    top: 80%;
+    left: 30%;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    background: #0A3871;
+    color: white;
+    font: Inter;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    border: 1px;
+    cursor: pointer;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <script  src="/encriptador.js"></script>
+        <header class="cabecera">
+            <img class="logo" src="imagenes/Logo.png " alt="Logo Alura">
+        </header>
+        <main>
+
+            <div class="global">
+                    <textarea class="textarea" placeholder="Ingrese el texto aquí" cols="45" rows="10" ></textarea>
+                <div class="limitaciones">
+                    <img src="imagenes/Vector.png" alt="Alerta limitaciones" class="limit-img">
+                    <p class="limit-text">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="botones">
+                    <button class="cript-btn" onclick = "Encriptarbtn()">
+                        <p class="cript">Encriptar</p>
+                    </button>
+                    <button class="uncript-btn" onclick="desencriptarTexto()">
+                        <p class="uncript">Desencriptar</p>
+                    </button>
+                </div>
+        
+                <div>
+                    <div class="rectangulo">
+                        <textarea id="output" class="mensajeencriptado" cols="60" rows="5"></textarea>
+                        <button class="btn-copia">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+
+</html>
